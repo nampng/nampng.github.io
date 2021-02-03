@@ -71,6 +71,7 @@
 .flex-columns .column-left,
 .flex-columns .column-right {
     height: 100%;
+    width: 100%;
 }
 
 .flex-columns img {
@@ -79,10 +80,10 @@
     object-fit: cover;
 }
 
-.flex-columns .column h1 {
+.flex-columns .column-left h1 {
     padding: 20px 20px 0;
 }
 
-.flex-columns .column p {
+.flex-columns .column-left p {
     padding: 5px 20px;
 }
