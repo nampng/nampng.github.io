@@ -82,6 +82,12 @@ img {
 
 /* Welcome */
 
+.welcome.cut {
+    background: url('../img/pond.JPG') no-repeat center center/cover;
+    height: 30vh;
+    position: relative;
+}
+
 .welcome {
     background: url('../img/pond.JPG') no-repeat center center/cover;
     height: 100vh;
@@ -125,4 +131,51 @@ img {
 
 .flex-columns .btn {
     margin: 20px;
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+    }
+
+    .navbar h1 {
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        padding: 20px;
+    }
+
+    .navbar a {
+        margin: 0;
+    }
+
+    .flex-columns .row {
+        flex-direction: column;
+    }
+
+    .flex-columns .row.reverse {
+        flex-direction: column;
+    }
+
+    .welcome.cut {
+        height: 50vh;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-row.reverse {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 551px) {
+    .navbar i {
+        display: none;
+    }
 }
