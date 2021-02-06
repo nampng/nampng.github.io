@@ -62,7 +62,7 @@ img {
     color: #fff;
 }
 
-.navbar h1:hover {
+.navbar h1 a:hover {
     color: #3a86ff;
 }
 
@@ -70,12 +70,12 @@ img {
     margin: 0 20px;
 }
 
-.navbar a {
+.navbar li a {
     margin: 0 5px;
     color: #fff;
 }
 
-.navbar a:hover, .navbar .logo-text-pair:hover{
+.navbar li a:hover{
     color: #3a86ff;
     border-bottom: #fff 1px solid;
 }
@@ -177,5 +177,29 @@ img {
 @media(max-width: 551px) {
     .navbar i {
         display: none;
+    }
+}
+
+/* Animation */
+
+.welcome h1 {
+    animation: wel1-anim 2s forwards ease-in;
+    opacity: 0;
+}
+
+.welcome p {
+    animation: wel2-anim 2s forwards ease-in 1s;
+    opacity: 0;
+}
+
+@keyframes wel1-anim {
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes wel2-anim {
+    to {
+        opacity: 100;
     }
 }
