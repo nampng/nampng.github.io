@@ -152,10 +152,11 @@ img {
 
 #projects article h1 {
     font-size: 1.8rem;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 #projects article p {
+    padding: 20px 0;
     font-size: 1.2rem;
 }
 
